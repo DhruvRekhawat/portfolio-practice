@@ -54,11 +54,151 @@ li:hover{
 main{
     position: relative;
     left: 200px;
-    background-color: black;
+    background-color: #161616;
     color: #D6D6D6;
     width: 100%;
     
 }
 section{
-    height: 75vh;
+    padding: 4rem;
+    margin-bottom: 4rem;
 }
+
+.text-hero{
+    font-size: 44px;
+   
+}
+.text-gradient{
+    background: rgb(83,50,255);
+    background: linear-gradient(135deg, rgba(83,50,255,1) 11%, rgba(242,0,255,1) 100%); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.5rem;
+}
+
+
+.hello-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.desc-hero{
+    font-size: 16px;
+    margin-top: 1.5rem;
+    line-height: 1.15;
+    color: #cbcaca;
+}
+
+.hero-btns{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0rem;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-btns>button{
+        font-size: 20px;
+}
+.download-cv{
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    overflow: hidden;
+    border: 15px;
+}
+.download-cv::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -50%;
+    top:-50%;
+
+    padding: 0;
+    margin: 0;
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(
+        90deg,
+        hsla(197, 100%, 64%, 1) 0%,
+        hsla(339, 100%, 55%, 1) 100%
+      );
+    z-index: -2;
+}
+
+
+
+
+
+@media screen and (width <= 480px) {
+    .nav-desktop{
+        display: none;
+    }
+    .nav-mobile{
+        position: fixed;
+        bottom: 0px;
+        z-index: 10;
+        background-color: #565656;
+        width: 100vw;
+        height: 4rem;
+    }
+
+    .nav-mobile-body{
+        border-color: blue;
+        width: 100%;
+        z-index: 11;
+    }
+
+    .nav-mobile-list{
+       display: grid;
+       grid-template-columns: repeat(5,1fr);
+    }
+
+    .nav-mobile-list>li{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .nav-mobile-list>li>p{
+        font-size: small;
+    }
+
+    main{
+        left: 0px;
+       
+    }
+
+    .hello-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+
+    .text-hero{
+        font-size: 32px;
+       
+    }
+  }
+
+
+
+@media screen and (width>480px) {
+   .nav-mobile{
+    display: none;
+   }
+   .nav-desktop{
+    display: block ;
+   }
+
+
+
+   
+  }
+
+/* 
+  @media screen and (max-width: 3000px) {
+    .nav-mobile{
+        display: none;
+    }
+  } */

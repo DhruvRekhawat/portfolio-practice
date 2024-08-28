@@ -7,21 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <aside>
+    <aside class="nav-desktop">
         <nav>
             <ul>
                 <li><img src="./icons/hand.svg" alt="" srcset="" class="nav-icon">Hello!</li>
                 <li><img src="./icons/smile.svg" alt="" srcset="" class="nav-icon">About Me</li>
-                <li><img src="./icons/hand.svg" alt="" srcset="" class="nav-icon">Experience</li>
-                <li><img src="./icons/hand.svg" alt="" srcset="" class="nav-icon">Hobbies</li>
-                <li><img src="./icons/hand.svg" alt="" srcset="" class="nav-icon">Hire Me!</li>
+                <li><img src="./icons/breifcase.svg" alt="" srcset="" class="nav-icon">Experience</li>
+                <li><img src="./icons/guitar.svg" alt="" srcset="" class="nav-icon">Hobbies</li>
+                <li><img src="./icons/laptop.svg" alt="" srcset="" class="nav-icon">Hire Me!</li>
             </ul>
         </nav>
     </aside>
+    <div class="nav-mobile">
+        <div class="nav-mobile-body">
+            <ul class="nav-mobile-list">
+                <li class="nav-mobile-listitem"><img src="./icons/hand.svg" alt="" srcset="" class="nav-icon">
+                    <p>Hello</p>
+                </li>
+                <li><img src="./icons/smile.svg" alt="" srcset="" class="nav-icon"><p>About</p></li>
+                <li><img src="./icons/breifcase.svg" alt="" srcset="" class="nav-icon"><p>Experience</p></li>
+                <li><img src="./icons/guitar.svg" alt="" srcset="" class="nav-icon"><p>Hobbies</p></li>
+                <li><img src="./icons/laptop.svg" alt="" srcset="" class="nav-icon"><p>Hire Me </p></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
     <main>
-        <section id="hello">
-            <h1>Hello</h1>
+        <section id="hello" class="hello-section">
+            <div>
+                <h1 class="text-hero">Hey I am <span class="text-gradient">Dhruv</span>, I make software</h1>
+                <p class="desc-hero">I make software, teach and play guitar in my free time!</p>
+                <div class="hero-btns">
+                    <button class="download-cv">
+                        Download CV
+                    </button>
+                    <button>
+                        Hire me!
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img src="./icons/hero.svg" height="300px" alt="" srcset="">
+            </div>
         </section>
+
+
+
+
+
         <section id="about">
             <h1>About</h1>
         </section>
@@ -35,6 +71,11 @@
             <h1>Hire Me</h1>
         </section>
     </main>
+
+
+
+
+
     <footer></footer>
 </body>
 </html>
