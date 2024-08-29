@@ -95,38 +95,63 @@ section{
     margin: 2rem 0rem;
     position: relative;
     z-index: 10;
+   
 }
 
-.hero-btns>button{
-        font-size: 20px;
-}
-.download-cv{
+
+.download-cv-outer{
     position: relative;
-    z-index: 1;
-    background-color: white;
     overflow: hidden;
-    border: 15px;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: all ease 300ms ;
 }
-.download-cv::before{
-    content: " ";
-    display: block;
+
+.download-cv-outer::before{
+    content: "";
     position: absolute;
-    left: -50%;
-    top:-50%;
-
-    padding: 0;
-    margin: 0;
-    height: 400px;
-    width: 400px;
     background: linear-gradient(
-        90deg,
-        hsla(197, 100%, 64%, 1) 0%,
-        hsla(339, 100%, 55%, 1) 100%
-      );
+    90deg,
+    hsla(197, 100%, 64%, 1) 0%,
+    hsla(339, 100%, 55%, 1) 100%
+  );
+    height: 300px;
+    width: 300px;
+
     z-index: -2;
+    animation: rotate 5s linear infinite;
+   
+}
+.download-cv-inner{
+    background-color: #cbcaca;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    height: 90px;
+    width: 190px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.download-cv-outer:hover{
+    translate: 5px -5px;
 }
 
 
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 
 
@@ -141,6 +166,7 @@ section{
         background-color: #565656;
         width: 100vw;
         height: 4rem;
+
     }
 
     .nav-mobile-body{
